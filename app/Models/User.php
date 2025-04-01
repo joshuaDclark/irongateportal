@@ -29,6 +29,12 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
+        'can_sell_handguns',
+        'can_sell_nfa_items',
+        'is_high_capacity_magazine_allowed',
+        'state_license_number',
+        'state_license_expiration',
     ];
 
     /**
@@ -62,6 +68,10 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'can_sell_handguns' => 'boolean',
+            'can_sell_nfa_items' => 'boolean',
+            'is_high_capacity_magazine_allowed' => 'boolean',
+            'state_license_expiration' => 'date',
         ];
     }
 }
