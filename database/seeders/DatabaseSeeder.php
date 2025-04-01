@@ -18,6 +18,20 @@ class DatabaseSeeder extends Seeder
         User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
+            'password' => bcrypt('password'),
+            'role' => 'customer',
+            'can_sell_handguns' => true,
+            'can_sell_nfa_items' => false,
+            'is_high_capacity_magazine_allowed' => true,
+            'state_license_number' => 'NC-123456',
+            'state_license_expiration' => now()->addYear(),
+        ]);
+
+        User::factory()->create([
+            'name' => 'Admin User',
+            'email' => 'admin@example.com',
+            'password' => bcrypt('password'),
+            'role' => 'admin',
         ]);
     }
 }
