@@ -5,6 +5,10 @@
         </h2>
     </x-slot>
 
+    <div class="p-6">
+        <livewire:dealer-sku-table />
+    </div>
+
     <div class="p-6 space-y-4">
         <div>
             Welcome, {{ Auth::user()->name }} (Dealer)<br>
