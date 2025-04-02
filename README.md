@@ -50,7 +50,7 @@ The live version of this demo application is published at [xtechnologies.pro](ht
 
 ## Local Setup (Dev)
 ```bash
-git clone [repo-url] && cd irongateportal
+git clone https://github.com/joshuaDclark/irongateportal.git && cd irongateportal
 cp .env.example .env
 ./vendor/bin/sail up -d
 ./vendor/bin/sail composer install
