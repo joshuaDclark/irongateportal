@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+
+use App\Models\Sku;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -9,13 +11,14 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class SkuFactory extends Factory
 {
-    protected $model = \App\Models\Sku::class;
-
     /**
      * Define the model's default state.
      *
      * @return array<string, mixed>
      */
+
+     protected $model = Sku::class;
+
     public function definition(): array
     {
         $type = $this->faker->randomElement(['Pistol', 'Rifle', 'Shotgun']);
