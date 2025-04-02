@@ -8,4 +8,8 @@
     <div class="p-6">
         Welcome, {{ Auth::user()->name }} (Admin)
     </div>
+
+    <div class="p-6">
+        <livewire:admin-sku-table />
+    </div>
 </x-app-layout>
