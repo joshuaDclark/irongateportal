@@ -1,4 +1,5 @@
 <div>
+   
     <h2 class="text-lg font-bold mb-4">Available SKUs</h2>
 
     <table class="w-full text-left border-collapse border border-gray-300">

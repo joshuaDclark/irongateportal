@@ -1,5 +1,6 @@
 <div>
-    <h2 class="text-lg font-bold mb-4">All SKUs (Admin View)</h2>
+  
+  <h2 class="text-lg font-bold mb-4">All SKUs (Admin View)</h2>
 
     <table class="w-full text-left border-collapse border border-gray-300">
         <thead>

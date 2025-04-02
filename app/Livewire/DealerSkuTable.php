@@ -9,9 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class DealerSkuTable extends Component
 {
-    use WithPagination;
-
-    protected function filteredSkus()
+        protected function filteredSkus()
     {
         $user = Auth::user();
 
